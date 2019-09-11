@@ -1,0 +1,10 @@
+#Your code below
+a=[int(x) for x in input().split()]
+s,t,g=0,0,0
+for i in a:
+    if i%2==0:
+        s=s+i
+    else:
+        t=t+i
+        g=g+1
+print(s if s>0 else "-1","%.1f"%(t/g) if t>0 else "-1")
